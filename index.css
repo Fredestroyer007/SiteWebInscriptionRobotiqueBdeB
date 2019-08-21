@@ -13,5 +13,19 @@ iframe {
 
 .margin-top {
     margin-top: 10px;
-    marging-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.intendleft {
+    margin-left: 50px;
+}
+
+.intendright {
+    margin-right: 50px;
+}
+
+.borderTeam {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }

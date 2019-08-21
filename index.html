@@ -9,6 +9,7 @@
   <meta name="author" content="Frédéric Larochelle">
 
   <title>Équipe de robotique BdeB</title>
+  <link rel="shortcut icon" type="image/x-icon" href="ImageFull/robotic.png" />
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -97,52 +98,17 @@
     <div class="container">
       <h2 class="text-center mt-0">La compétition CRC</h2>
       <hr class="divider my-4">
-      <p class="text-center mb-4">Selon le site web de la compétition: « [La compétition CRC] a été fondée en 2001 par
-        un
-        groupe de jeunes professionnels et
-        enseignants réunis autour d’une passion commune pour la robotique et l’éducation. Insatisfaits et déçus par les
-        compétitions accessibles aux écoles secondaires et aux CÉGEPs canadiens, ils entreprirent la création d’une
-        compétition annuelle alliant les sciences, les technologies, l’ingénierie et les mathématiques (STIM) avec
-        l’informatique, les arts, et les langues. »
+      <p class="text-center mb-4">
+        La compétition CRC de robotique a été fondé en 2001 dans le but d'offir une compétition accessible aux écoles
+        secondaire et aux CÉGEPS. La compétition cherche à promouvoir le travail d'équipe, l'autonomie, le bilinguisme,
+        les champs STEM et l'inclusion des différentes minorités des les champs STEM.
+        <br><br>L'équipe de robotique du Collège de Bois-de-Boulogne participe a cette compétition depuis 2011. L'an
+        passé, lors de l'édition Vertigoal 2019, notre équipe a finit 4ième au classement général en se démarquant sur
+        les facettes du robot, de la programmaton et de l'esprit d'équipe.
       </p>
-      <p class="text-center mb-4">Ils cherchent à remplir cette vision en suivant quatre valeurs fondamentales.</p>
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Bilinguisme</h3>
-            <p class="text-muted mb-0">Nous préparons les jeunes Canadiens au monde professionnel d’aujourd’hui en
-              exigeant que tout le contenu créé par les étudiants soit autant anglophone que francophone.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Pluridisciplinarité</h3>
-            <p class="text-muted mb-0">Nous créons des situations au cours desquelles les étudiants sont à même
-              d’appliquer et développer leurs connaissances scientifiques, mathématiques, informatiques, artistiques et
-              linguistiques.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Travail d'équipe</h3>
-            <p class="text-muted mb-0">Nous promouvons l’atteinte d’un objectif commun en cultivant l’esprit d’équipe
-              chez les participants, sans jamais oublier que la poursuite de l’excellence est plus importante que la
-              victoire.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Équité</h3>
-            <p class="text-muted mb-0">Nous travaillons activement à l’inclusion communautés marginalisés en repensant
-              l’apprentissage des STIM dans son ensemble.</p>
-          </div>
-        </div>
-      </div>
+
+      <img class="img-fluid borderTeam" src="ImageFull/team.jpg" alt="">
+
     </div>
   </section>
 
@@ -183,7 +149,8 @@
               <div class="project-text w-100 my-auto text-center text-lg-right margin-space margin-top">
                 <h4 class="text-white mt-0">Section vidéo</h4>
                 <p class="text-white-50 mb-4">À chaque année, il faut faire une vidéo pour présenter notre équipe, notre
-                  école et la compétition. Donc, intéressés par la production vidéo? Les effets spéciaux? L'animation 3d?
+                  école et la compétition. Donc, intéressés par la production vidéo? Les effets spéciaux? L'animation
+                  3d?
                   Être devant la caméra? Cette section est pour vous! </p>
               </div>
             </div>
@@ -218,7 +185,8 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right margin-space margin-top">
                 <h4 class="text-white mt-0">Section programmation</h4>
-                <p class="text-white-50 mb-4">À chaque année, le défi de programmation nous demandes d'user de stratagèmes pour nous
+                <p class="text-white-50 mb-4">À chaque année, le défi de programmation nous demandes d'user de
+                  stratagèmes pour nous
                   démarquer et résoudre le défi. Donc, intéressés par la logique? La résolution de problème? La
                   programmation? Cette section est pour vous!</p>
               </div>
@@ -280,7 +248,7 @@
           l'information au sujet de la première rencontre.</p>
 
         <div>
-          <form name="submit-to-google-sheet" action="#!">
+          <form name="submit-to-google-sheet onsubmit="myButton.disabled = true; return true;"" action="#!">
             <div class="row">
               <input type="text" name="prenom" type="prenom" class="form-control mb-4 col margin-space" id="inputPrenom"
                 placeholder="Prénom" required>
@@ -321,23 +289,23 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwiK7w8R3iOdJXtA5Wa8olbA0xhHRctWQNLr_Gs/exec'
     const form = document.forms['submit-to-google-sheet']
 
-    form.addEventListener('submit', e => {
+    button.addEventListener('click', e=> {
       e.preventDefault()
+    })
+    form.addEventListener('submit', e => {
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
     })
   </script>
 
-  <!-- Bootstrap core JavaScript -->
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-  <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
 
 </body>
