@@ -248,7 +248,7 @@
           l'information au sujet de la première rencontre.</p>
 
         <div>
-          <form name="submit-to-google-sheet">
+          <form name="submit-to-google-sheet" id="asd">
             <div class="row">
               <input type="text" name="prenom" type="prenom" class="form-control mb-4 col margin-space" id="inputPrenom"
                 placeholder="Prénom" required>
@@ -272,7 +272,7 @@
             <small id="info" class="form-text text-white-50 mb-4">Nous ne partagerons jamais vos informations avec qui
               que ce
               soit.</small>
-            <button type="submit" class="btn btn-light btn-xl">Envoyer</button>
+            <button type="submit" class="btn btn-light btn-xl" onclick="document.getElementById('asd').reset()">Envoyer</button>
           </form>
         </div>
       </div>
